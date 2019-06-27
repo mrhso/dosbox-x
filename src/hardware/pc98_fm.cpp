@@ -339,15 +339,15 @@ void PC98_FM_OnEnterPC98(Section *sec) {
 
         pc98fm_init = true;
 
-        unsigned int rate = 44100;
+        unsigned int rate = 48000;
 
         memset(&pccore,0,sizeof(pccore));
-        pccore.samplingrate = 44100;
+        pccore.samplingrate = 48000;
 		pccore.baseclock = PIT_TICK_RATE;
 		pccore.multiple = 1;
         for (unsigned int i=0;i < 6;i++) pccore.vol14[i] = 0xFF;
         pccore.vol_fm = 128;
-        pccore.vol_ssg = 128;
+        pccore.vol_ssg = 64;
         pccore.vol_adpcm = 128;
         pccore.vol_pcm = 128;
         pccore.vol_rhythm = 128;

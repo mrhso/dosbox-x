@@ -1,17 +1,4 @@
 #---------------------------------#
-#      general configuration      #
-#---------------------------------#
-
-branches:
-  only:
-    - master
-
-only_commits:
-  files:
-    - src\
-    - vs2015\
-
-#---------------------------------#
 #    environment configuration    #
 #---------------------------------#
 
